@@ -5,11 +5,8 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { connect } from 'react-redux';
 import { addFavorite } from '../redux/action.js';
 import '../stylesheets/Card.css'
-import {useState} from 'react'
 
 function Card({ name, image, id, addFavorite, favoritos }) {
-
-  const [button, setButton] = useState(false)
 
   const agregar = () => {
     addFavorite({ id: id, name: name, image: image })
@@ -29,7 +26,6 @@ function Card({ name, image, id, addFavorite, favoritos }) {
         <div className='contenedor-doble'>
           <h1 className='name-link-card'>{name}</h1>
           <FontAwesomeIcon icon={faStar} className='agregar-favorito' onClick={() => agregar()} />
-          {/* <button onClick={() => agregar()} disabled={button} >Add</button> */}
         </div>
 
       </div>

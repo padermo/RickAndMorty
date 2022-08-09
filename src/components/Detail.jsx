@@ -7,8 +7,9 @@ function Detail({match}) {
   const state = useSelector(state => state.detail)
   const dispatch = useDispatch()
 
+  const matchId = match.params.id;
   useEffect(() => {
-    dispatch(detailUsers(match.params.id))
+    dispatch(detailUsers(matchId))
   },[dispatch])
 
   console.log(state);

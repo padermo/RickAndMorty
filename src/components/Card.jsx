@@ -6,11 +6,10 @@ import { connect } from 'react-redux';
 import { addFavorite } from '../redux/action.js';
 import '../stylesheets/Card.css'
 
-function Card({ name, image, id, addFavorite, favoritos }) {
+function Card({ name, image, id, addFavorite }) {
 
   const agregar = () => {
     addFavorite({ id: id, name: name, image: image })
-    favoritos.filter(e => e.name === name ? setButton(true) : setButton(false))
   }
 
   return (
@@ -33,16 +32,10 @@ function Card({ name, image, id, addFavorite, favoritos }) {
   )
 }
 
-function mapStateToProps(state) {
-  return {
-    favoritos: state.favoritos
-  }
-}
-
 function mapDispatchToProps(dispatch) {
   return {
     addFavorite: name => dispatch(addFavorite(name))
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Card)
+export default connect(null, mapDispatchToProps)(Card)

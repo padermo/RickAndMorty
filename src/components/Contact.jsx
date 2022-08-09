@@ -1,28 +1,14 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {connect} from 'react-redux'
 import { addContact } from '../redux/action'
 import '../stylesheets/Contact.css'
 
 function Contact({contact}) {
 
-  const [first, setFirst] = useState("")
-  const [last, setLast] = useState("")
-  const [email, setEmail] = useState("")
-  const [comment, setComment] = useState("")
-
-  function onChange(e) {
-    e.preventDefault()
-    addContact({
-      firstName: setFirst(e.target.value),
-      lastName: setLast(e.target.value),
-      email: setEmail(e.target.value),
-      comment: setComment(e.target.value)
-    })
-  }
 
   console.log(contact);
   return (
-    <form type='submit' onSubmit={() => onChange} className='formulario'>
+    <form type='submit' className='formulario'>
       <h1 className='contact-us'>Contact Us</h1>
       <div className='contenedor-formulario'>
         <div className='contenedor-names'>

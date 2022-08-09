@@ -1,0 +1,17 @@
+.contenedor-footer{
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+}
+.contenedor-interno-footer{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.rick-font{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

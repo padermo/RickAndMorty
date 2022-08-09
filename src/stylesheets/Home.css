@@ -1,0 +1,12 @@
+.contenedor-cartas{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* quitar aqui abajo  */
+.home-card{
+  display: grid;
+  justify-content: center;
+}

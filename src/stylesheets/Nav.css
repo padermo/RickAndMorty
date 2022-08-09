@@ -1,0 +1,33 @@
+:root{
+  --colorHoverLetter: #2FCCFB;
+}
+
+.contenedor-nav{
+  background-color: black;
+}
+.contenedor-interno-nav{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+.link{
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: white;
+}
+.link:hover{
+  color: var(--colorHoverLetter);
+  transform: scale(1.01, 1.01);
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  -webkit-transform: scale(1.01, 1.01);
+  -moz-transform: scale(1.01, 1.01);
+  -ms-transform: scale(1.01, 1.01);
+  -o-transform: scale(1.01, 1.01);
+}

@@ -1,0 +1,27 @@
+.contenedor-detail{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.info-detail{
+  display: grid;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+.info-detail span{
+  font-weight: bold;
+}
+.contenedor-datos-detail{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.image-detail{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,27 @@
+.contenedor-padre-about{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.title-about{
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 10px 0;
+}
+.contenedor-interno-about{
+  margin: 20px;
+}
+.first, .second{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.second{
+  margin: 20px 0 0 0;
+}
+.imagenes-contenedor{
+  width: 600px;
+  height: 300px;
+}

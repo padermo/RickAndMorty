@@ -1,0 +1,11 @@
+.home{
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  background: color('white');
+  &__content{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+.searchbar{
+  display: flex;
+  border: 1px solid color('hielo');
+  width: 240px;
+  border-radius: 25px;
+  background: color('white');
+
+  &__input{
+    border: none;
+    background: none;
+    border-radius: 25px 0 0 25px;
+    height: 40px;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    outline: none;
+    color: color('hielo');
+  }
+
+  &__btn{
+    border: none;
+    background: none;
+    color: color('hielo');
+    border-radius: 0 25px 25px 0;
+    padding: 10px 10px;
+    cursor: pointer;
+    height: 40px;
+
+    &:hover{
+      color: color('green');
+      transition: .5s all ease-in-out;
+    }
+  }
+}
